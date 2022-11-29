@@ -32,9 +32,9 @@ class Calculator extends React.Component {
             <button type="button" className="number">3</button>
             <button type="button" className="operator">&divide;</button>
 
-            <button type="button" className="number">0</button>
+            <button type="button" className="number zero">0</button>
             <button type="button" className="number">.</button>
-            <button type="button" className="equal-sign">=</button>
+            <button type="button" className="equal-sign operator">=</button>
 
           </div>
 
