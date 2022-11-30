@@ -40,7 +40,7 @@ class Calculator extends React.Component {
 
             <button type="button" className="all-clear" name="AC" onClick={this.handleCalculation}>AC</button>
             <button type="button" className="Plus-minus" name="+/-" onClick={this.handleCalculation}>+/-</button>
-            <button type="button" className="percentage oprator" name="%" onClick={this.handleCalculation}>%</button>
+            <button type="button" className="oprator" name="%" onClick={this.handleCalculation}>%</button>
             <button type="button" className="operator" name="+" onClick={this.handleCalculation}>+</button>
 
             <button type="button" className="number" name="7" onClick={this.handleCalculation}>7</button>
@@ -60,7 +60,7 @@ class Calculator extends React.Component {
 
             <button type="button" className="number zero" name="0" onClick={this.handleCalculation}>0</button>
             <button type="button" className="number" name="." onClick={this.handleCalculation}>.</button>
-            <button type="button" className="equal-sign operator" name="=" onClick={this.handleCalculation}>=</button>
+            <button type="button" className="operator" name="=" onClick={this.handleCalculation}>=</button>
 
           </div>
 
