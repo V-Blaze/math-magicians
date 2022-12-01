@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import './Calculator.css';
 import calculate from '../logic/calculate';
 
-// eslint-disable-next-line react/prefer-stateless-function
 const Calculator = () => {
   const [calcData, setCalcData] = useState({
     total: null,
     next: null,
     operation: null,
   });
+
   const handleCalculation = (e) => {
     const buttonName = e.target.name;
 
