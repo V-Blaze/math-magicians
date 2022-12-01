@@ -4,20 +4,19 @@ import calculate from '../logic/calculate';
 
 // eslint-disable-next-line react/prefer-stateless-function
 const Calculator = () => {
-  const [handleCalculation, setHandleCalculation] = useState({
+  const [calcData, setCalcData] = useState({
     total: null,
     next: null,
     operation: null,
   });
-  handleCalculation = (e) => {
-    // const buttonName = e.target.name;
+  const handleCalculation = (e) => {
+    const buttonName = e.target.name;
 
-    // return this.setState((obj) => calculate(obj, buttonName));
+    return setCalcData((obj) => calculate(obj, buttonName));
   };
 
-  const { total, next, operation } = handleCalculation;
-  const output = `${total}${operation}${next}`.replace(/null/g, '');
-  const trimedOutput = output.replace(/undefined/g, '');
+  const { total, next, operation } = calcData;
+  const output = `${total}${operation}${next}`.replace(/null/g, '').replace(/undefined/g, '');
 
   return (
     <>
@@ -27,7 +26,7 @@ const Calculator = () => {
           type="text"
           className="calculator-screen"
           id="calc-screen"
-          value={trimedOutput === '' ? '0' : trimedOutput}
+          value={output === '' ? '0' : output}
           disabled
         />
 
