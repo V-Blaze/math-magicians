@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  padding: 0.5rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: gray;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.menu-list {
+ display: flex;
+ justify-content: space-between;
+ list-style: none;
+}
+
+.list-item {
+ margin-right: 0.5rem;
+ font-size: 1.5rem;
+ cursor: pointer;
+}
