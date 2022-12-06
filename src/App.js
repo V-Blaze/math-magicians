@@ -15,10 +15,10 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <Navbar />
         <BrowserRouter>
+          <Navbar />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route index element={<Home />} />
             <Route path="calculator" element={<Calculator />} />
             <Route path="quote" element={<Quote />} />
           </Routes>

@@ -1,0 +1,7 @@
+.quote-main {
+    height: 100vh;
+    padding: 0 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
