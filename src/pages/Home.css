@@ -1,11 +1,11 @@
 .main-home {
   padding: 20% 15%;
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-title {
- font-size: 1.8rem;
- font-style: italic;
+  font-size: 1.8rem;
+  font-style: italic;
 }
