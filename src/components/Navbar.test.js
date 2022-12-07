@@ -9,8 +9,8 @@ describe('testing the Navbar', () => {
         <Navbar />
       </Router>,
     );
-    const h1Element = screen.getByText(/Math Magicians/i);
-    expect(h1Element).toBeInTheDocument();
+    const title = screen.getByText(/Math Magicians/i);
+    expect(title).toBeInTheDocument();
   });
   it('testing the Link Home inside the Navbar ', () => {
     render(
@@ -18,7 +18,7 @@ describe('testing the Navbar', () => {
         <Navbar />
       </Router>,
     );
-    const buttonNumberElement = screen.getByText(/Home/i);
-    expect(buttonNumberElement).toBeInTheDocument();
+    const linkElement = screen.getByText(/Home/i);
+    expect(linkElement).toBeInTheDocument();
   });
 });
